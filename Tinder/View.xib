@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="5000" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="7iT-6I-8wt">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.72181128910000003" green="0.17709821370000001" blue="0.80327767130000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowColor">
+                            <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                            <size key="value" width="0.0" height="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.0" tag="5001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="like" translatesAutoresizingMaskIntoConstraints="NO" id="FUz-LX-biz">
+                    <rect key="frame" x="20" y="66" width="142.5" height="120"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.0" tag="5002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nope" translatesAutoresizingMaskIntoConstraints="NO" id="ttf-Y1-n6a">
+                    <rect key="frame" x="212.5" y="66" width="142.5" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="ZXQ-zF-7Hv"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.0" tag="5003" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="superLike" translatesAutoresizingMaskIntoConstraints="NO" id="beN-kY-GqH">
+                    <rect key="frame" x="112.5" y="537" width="150" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="8nI-w1-GRF"/>
+                        <constraint firstAttribute="width" constant="150" id="g6b-Za-KJr"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.72156862749999995" green="0.91372549020000005" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="FUz-LX-biz" firstAttribute="width" secondItem="ttf-Y1-n6a" secondAttribute="width" id="7AX-DG-Pl4"/>
+                <constraint firstItem="FUz-LX-biz" firstAttribute="height" secondItem="ttf-Y1-n6a" secondAttribute="height" id="7oy-dt-lcD"/>
+                <constraint firstItem="FUz-LX-biz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Abt-XP-1n3"/>
+                <constraint firstItem="7iT-6I-8wt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="FGe-Hf-VYb"/>
+                <constraint firstItem="beN-kY-GqH" firstAttribute="centerX" secondItem="7iT-6I-8wt" secondAttribute="centerX" id="L2F-EZ-Frh"/>
+                <constraint firstItem="ttf-Y1-n6a" firstAttribute="leading" secondItem="FUz-LX-biz" secondAttribute="trailing" constant="50" id="OAD-fc-8v3"/>
+                <constraint firstAttribute="bottom" secondItem="7iT-6I-8wt" secondAttribute="bottom" id="PFN-eH-MiJ"/>
+                <constraint firstItem="7iT-6I-8wt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Pwi-z6-lI4"/>
+                <constraint firstItem="FUz-LX-biz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="66" id="SRj-rn-85c"/>
+                <constraint firstItem="FUz-LX-biz" firstAttribute="centerY" secondItem="ttf-Y1-n6a" secondAttribute="centerY" id="WVD-mw-9fA"/>
+                <constraint firstAttribute="bottom" secondItem="beN-kY-GqH" secondAttribute="bottom" constant="50" id="X9k-Qd-ntP"/>
+                <constraint firstItem="beN-kY-GqH" firstAttribute="top" secondItem="ttf-Y1-n6a" secondAttribute="bottom" priority="998" constant="351" id="iqf-lp-Lb5"/>
+                <constraint firstAttribute="trailing" secondItem="7iT-6I-8wt" secondAttribute="trailing" id="nSD-6b-GhI"/>
+                <constraint firstAttribute="trailing" secondItem="ttf-Y1-n6a" secondAttribute="trailing" constant="20" id="qes-0D-xT3"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="20"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowColor">
+                    <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                    <real key="value" value="0.5"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                    <integer key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                    <size key="value" width="1" height="1"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="72.799999999999997" y="17.541229385307346"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home" width="564" height="687"/>
+        <image name="like" width="400" height="213"/>
+        <image name="nope" width="401" height="203"/>
+        <image name="superLike" width="400" height="355"/>
+    </resources>
+</document>
